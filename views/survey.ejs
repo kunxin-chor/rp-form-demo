@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+    <form method="POST">
+        <label>First Name: </label>
+        <input type="text" name="firstName" />
+
+        <label>Last Name:</label>
+        <input type="text" name="lastName"/>
+
+        <div>
+            <!-- Highest qualification -->
+            <input type="radio" name="qualification" value="psle"/>
+            <label>PSLE</label>
+            <input type="radio" name="qualification" value="olevel"/>
+            <label>O'Level</label>
+            <input type="radio" name="qualification" value="diploma"/>
+            <label>Diploma</label>
+        </div>
+
+        <div>
+            <!-- Hobbies -->
+            <input type="checkbox" name="hobbies" value="reading"/>
+            <label>Reading</label>
+
+            <input type="checkbox" name="hobbies" value="cycling"/>
+            <label>Cycling</label>
+
+            <input type="checkbox" name="hobbies" value="sleeping"/>
+            <label>Sleeping</label>
+        </div>
+
+        <!-- Make sure the submit button is inside the form -->
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+
+</body>
+
+</html>
